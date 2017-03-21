@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C2292181E80CE2E005129F0 /* libHzlBlueTooth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2292171E80CE2E005129F0 /* libHzlBlueTooth.a */; };
 		B411533B1E0B659F00F6C964 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B411533A1E0B659F00F6C964 /* main.m */; };
 		B411533E1E0B659F00F6C964 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B411533D1E0B659F00F6C964 /* AppDelegate.m */; };
 		B41153411E0B659F00F6C964 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41153401E0B659F00F6C964 /* ViewController.m */; };
@@ -15,10 +16,6 @@
 		B41153491E0B659F00F6C964 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41153471E0B659F00F6C964 /* LaunchScreen.storyboard */; };
 		B41153541E0B659F00F6C964 /* BlueSdkSendDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41153531E0B659F00F6C964 /* BlueSdkSendDataTests.m */; };
 		B411535F1E0B659F00F6C964 /* BlueSdkSendDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B411535E1E0B659F00F6C964 /* BlueSdkSendDataUITests.m */; };
-		B411536E1E0B68D500F6C964 /* ConnectBlueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B411536D1E0B68D500F6C964 /* ConnectBlueManager.m */; };
-		B41153711E0B68E600F6C964 /* BrainData.m in Sources */ = {isa = PBXBuildFile; fileRef = B41153701E0B68E600F6C964 /* BrainData.m */; };
-		B44F7FBF1E1109D000669BB7 /* BlueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44F7FBE1E1109D000669BB7 /* BlueTableViewController.m */; };
-		B44F7FC21E110B8200669BB7 /* BlueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B44F7FC11E110B8200669BB7 /* BlueObject.m */; };
 		B44F7FD01E11152B00669BB7 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B44F7FC41E11152B00669BB7 /* LICENSE.txt */; };
 		B44F7FD11E11152B00669BB7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B44F7FC51E11152B00669BB7 /* README.md */; };
 		B44F7FD21E11152B00669BB7 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B44F7FC81E11152B00669BB7 /* SVIndefiniteAnimatedView.m */; };
@@ -46,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C22920E1E80C3AA005129F0 /* ConnectBlueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectBlueManager.h; sourceTree = "<group>"; };
+		3C2292101E80C3AA005129F0 /* HZLBlueData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZLBlueData.h; sourceTree = "<group>"; };
+		3C2292171E80CE2E005129F0 /* libHzlBlueTooth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHzlBlueTooth.a; sourceTree = "<group>"; };
 		B41153361E0B659F00F6C964 /* BlueSdkSendData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueSdkSendData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B411533A1E0B659F00F6C964 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B411533C1E0B659F00F6C964 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,14 +62,6 @@
 		B411535A1E0B659F00F6C964 /* BlueSdkSendDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueSdkSendDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B411535E1E0B659F00F6C964 /* BlueSdkSendDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueSdkSendDataUITests.m; sourceTree = "<group>"; };
 		B41153601E0B659F00F6C964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B411536C1E0B68D500F6C964 /* ConnectBlueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectBlueManager.h; sourceTree = "<group>"; };
-		B411536D1E0B68D500F6C964 /* ConnectBlueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectBlueManager.m; sourceTree = "<group>"; };
-		B411536F1E0B68E600F6C964 /* BrainData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrainData.h; sourceTree = "<group>"; };
-		B41153701E0B68E600F6C964 /* BrainData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrainData.m; sourceTree = "<group>"; };
-		B44F7FBD1E1109D000669BB7 /* BlueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueTableViewController.h; sourceTree = "<group>"; };
-		B44F7FBE1E1109D000669BB7 /* BlueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueTableViewController.m; sourceTree = "<group>"; };
-		B44F7FC01E110B8200669BB7 /* BlueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueObject.h; sourceTree = "<group>"; };
-		B44F7FC11E110B8200669BB7 /* BlueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueObject.m; sourceTree = "<group>"; };
 		B44F7FC41E11152B00669BB7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		B44F7FC51E11152B00669BB7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B44F7FC71E11152B00669BB7 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
@@ -88,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C2292181E80CE2E005129F0 /* libHzlBlueTooth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C2292191E80CE39005129F0 /* BlueToothSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3C22920E1E80C3AA005129F0 /* ConnectBlueManager.h */,
+				3C2292101E80C3AA005129F0 /* HZLBlueData.h */,
+				3C2292171E80CE2E005129F0 /* libHzlBlueTooth.a */,
+			);
+			name = BlueToothSDK;
+			sourceTree = "<group>";
+		};
 		B411532D1E0B659F00F6C964 = {
 			isa = PBXGroup;
 			children = (
@@ -136,14 +139,7 @@
 				B411533D1E0B659F00F6C964 /* AppDelegate.m */,
 				B411533F1E0B659F00F6C964 /* ViewController.h */,
 				B41153401E0B659F00F6C964 /* ViewController.m */,
-				B44F7FC01E110B8200669BB7 /* BlueObject.h */,
-				B44F7FC11E110B8200669BB7 /* BlueObject.m */,
-				B44F7FBD1E1109D000669BB7 /* BlueTableViewController.h */,
-				B44F7FBE1E1109D000669BB7 /* BlueTableViewController.m */,
-				B411536C1E0B68D500F6C964 /* ConnectBlueManager.h */,
-				B411536D1E0B68D500F6C964 /* ConnectBlueManager.m */,
-				B411536F1E0B68E600F6C964 /* BrainData.h */,
-				B41153701E0B68E600F6C964 /* BrainData.m */,
+				3C2292191E80CE39005129F0 /* BlueToothSDK */,
 				B41153421E0B659F00F6C964 /* Main.storyboard */,
 				B41153451E0B659F00F6C964 /* Assets.xcassets */,
 				B41153471E0B659F00F6C964 /* LaunchScreen.storyboard */,
@@ -343,13 +339,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B411536E1E0B68D500F6C964 /* ConnectBlueManager.m in Sources */,
 				B44F7FD31E11152B00669BB7 /* SVProgressAnimatedView.m in Sources */,
 				B41153411E0B659F00F6C964 /* ViewController.m in Sources */,
 				B44F7FD21E11152B00669BB7 /* SVIndefiniteAnimatedView.m in Sources */,
-				B41153711E0B68E600F6C964 /* BrainData.m in Sources */,
-				B44F7FC21E110B8200669BB7 /* BlueObject.m in Sources */,
-				B44F7FBF1E1109D000669BB7 /* BlueTableViewController.m in Sources */,
 				B44F7FD61E11152B00669BB7 /* SVRadialGradientLayer.m in Sources */,
 				B411533E1E0B659F00F6C964 /* AppDelegate.m in Sources */,
 				B44F7FD11E11152B00669BB7 /* README.md in Sources */,
@@ -507,6 +499,10 @@
 				INFOPLIST_FILE = BlueSdkSendData/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlueSdkSendData",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = macro.BlueSdkSendData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -520,6 +516,10 @@
 				INFOPLIST_FILE = BlueSdkSendData/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlueSdkSendData",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = macro.BlueSdkSendData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

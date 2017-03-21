@@ -8,60 +8,36 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
-#import "BrainData.h"
-#import "BlueObject.h"
-typedef struct{
-    unsigned int Signal;    //信号值
-    unsigned int Attention; //专注度
-    unsigned int Meditation;//放松度
-    unsigned int battery;   //电池电量
-}brain_data;
 
-typedef struct{
-    Byte isStop;    //是否停止
-    Byte algo;    //算法几
-    Byte  times;//录像时长
-    Byte at;   //开启录像的专注度阀值
-    Byte increseond;   //持续增加的秒数
-    Byte mixvalue;  //首尾数据的差值
-}Data_Set;
+//
+//#import "BlueObject.h"
+#import "HZLBlueData.h"
 
-typedef void(^BlueDataBlock)(uint8_t *brainData);
 
-typedef void(^BlueNameBlock)(BlueObject *blueObject);
+
+//// 5.上面所有数据
+typedef void(^HZLBLUEDataBlock)(HZLBlueData *hzlblueData);
 
 typedef void(^BlueConnectSuccess)(BOOL ConnectState);
-typedef NS_ENUM(NSUInteger, FRAME_FORMAT) {
-    BL_FRAME_FIRST = 0,
-    BL_DATA_LEN,
-    BL_DATA_REC,
-    BL_FRAME_END
-};
+
 @interface ConnectBlueManager : NSObject
-@property BOOL cbReady;
-@property BOOL isRefreshing;
-@property(nonatomic) float batteryValue;
-@property (nonatomic, strong) CBCentralManager *manager;
-@property (nonatomic, strong) CBPeripheral *peripheral;
-@property (strong ,nonatomic) CBCharacteristic *writeCharacteristic;
-@property (strong,nonatomic) NSMutableArray *nDevices;
-@property (strong,nonatomic) NSMutableArray *nServices;
-@property (strong,nonatomic) NSMutableArray *nCharacteristics;
-@property (readonly)FRAME_FORMAT    frame_format;
-@property (nonatomic,copy)BlueDataBlock bluedataBlock;
-@property  (nonatomic,copy)BlueNameBlock    bluenameBlock;
+
+//蓝牙接收数据成功的回调
+@property   (nonatomic,copy)HZLBLUEDataBlock    hzlblueDataBlock;
+//蓝牙连接是否成功的回调
 @property   (nonatomic,copy)BlueConnectSuccess  blueconnctBlock;
+
+//扫描一次60s,60s后没扫到是否需要一直扫描,默认为YES代表一直扫描
+@property   (nonatomic,assign)BOOL      alwaysScan;
+
+//初始化
 + (instancetype)shareInstance;
-
+//扫描周边蓝牙
 - (void)scanBluooth;
-
--(void)writeValue:(NSData*)byte;
-
-- (void)alogset:(Data_Set)dataset;
-
-- (void)connectPeripheral:(CBPeripheral*)peripheral;
-
-
+//向蓝牙写数据
+- (void)writeValue:(NSData*)byte;
+//断开蓝牙外设的连接
 - (void)disconnectPeripheral;
+
 @end
 

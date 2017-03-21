@@ -17,7 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    return YES;  
+    
+    ConnectBlueManager     *connectBlueManager =   [ConnectBlueManager shareInstance];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [connectBlueManager scanBluooth];
+    });
+    return YES;
 }
 
 
